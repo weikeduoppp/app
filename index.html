@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>广东省</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script>
+        //fixedW: 410px  固定宽度适配
+        (function () {
+            var html = document.querySelector('html');
+             changeRem();
+             // 页面宽度改变  重新获取width
+             function changeRem(){
+                 // meta:vp 存在 直接getBoundingClientRect()获取
+                 var width = html.getBoundingClientRect().width;
+                 // if(width>660){ //限制最大宽度
+                 //     width = 660;
+                 //     // width2 = window.screen.width;
+                 // }
+                 // 设置 初始字体大小
+                 html.style.fontSize = width/10 +"px";
+             };
+
+             window.addEventListener('resize',function(){
+                 changeRem();
+             })
+        })();
+
+    </script>
+</head>
+<body >
+    <!-- header start -->
+    <header class='header'>
+        <div class="h-header">
+            <div class="h-page">
+                <div class="h-logo">
+                    <div class="h-location">
+                        <span id="location">广东</span>
+                        <i class='fr'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="h-nav">
+                <ul class='nav'>
+                    <li><a href="javascript:void(0)"><span class="on">各地</span></a></li>
+                    <li><a href="javascript:void(0)"><span>各地景点</span></a></li>
+                    <li><a href="javascript:void(0)"><span>历史名人</span></a></li>
+                    <li><a href="javascript:void(0)"><span>文化民俗</span></a></li>
+                    <li><a href="javascript:void(0)"><span>日常</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="h-place"></div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <section class="main">
+        <!-- 轮播 -->
+        <section class="banner">
+            <ul>
+                <li><a href="javascript:void(0);"><img src="./img/banner1.jpg" alt="" width="100%" height="100%"></a></li>
+                <li><a href="javascript:void(0);"><img src="./img/banner2.jpg" alt="" width="100%" height="100%"></a></li>
+                <li><a href="javascript:void(0);"><img src="./img/banner3.jpg" alt="" width="100%" height="100%"></a></li>
+                <li><a href="javascript:void(0);"><img src="./img/banner4.jpg" alt="" width="100%" height="100%"></a></li>
+            </ul>
+            <div class="dot">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="b-title">
+                <p>广东</p>
+                GUANDONG
+            </div>
+        </section>
+        <!-- 广东各地 -->
+        <section class="page allPlace" id='allPlace'>
+            <a href="javascript:void(0);" class="title"><span>广东各地</span><i></i></a>
+            <div class="place">
+                <!-- <a href="javascript:void(0);">
+                    <img src="./img/hot1.jpg" alt="" width="100%" height="100%">
+                    <span class="placeName">广州</span>
+                    <span class="Name">GuanZhou</span>
+                </a> -->
+            </div>
+            <div class='more'><a href="javascript:void(0)">加载更多</a></div>
+        </section>
+
+        <!-- 推荐景点 -->
+        <section class="recommend" id='recommend'>
+            <div class="r-title">推荐景点</div>
+            <ul class='list'>
+                <li>
+                    <img src="img/ScenicSpot1.jpg" alt=""  height="100">
+                    <dl>
+                        <dt>广州塔</dt>
+                    </dl>
+                </li>
+                <li class='on'>
+                    <img src="img/ScenicSpot2.jpg" alt=""  height="100">
+                    <dl>
+                        <dt>世界之窗</dt>
+                    </dl>
+                </li>
+                <li>
+                    <img src="img/ScenicSpot3.jpg" alt=""  height="100">
+                    <dl>
+                        <dt>长隆野生动物园</dt>
+                    </dl>
+                </li>
+            </ul>
+            <ul class='list'>
+                <li>
+                    <img src="img/ScenicSpot4.jpg" alt="" height="100">
+                    <dl>
+                        <dt>珠海长隆海洋世界</dt>
+                    </dl>
+                </li>
+                <li >
+                    <img src="img/ScenicSpot5.jpg" alt="" height="100">
+                    <dl>
+                        <dt>东部华侨城</dt>
+                    </dl>
+                </li>
+                <li>
+                    <img src="img/ScenicSpot6.jpg" alt="" height="100">
+                    <dl>
+                        <dt>沙面</dt>
+                    </dl>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 各地景点 -->
+        <section class="page allScenic" >
+           <a href="javascript:void(0);" class="title"><span>各地景点</span><i></i></a>
+           <div class="scenic">
+            <ul>
+                    <!-- <li>
+                        <a href="javascript:void(0);" class="clearfix">
+                            <img src="./img/scenic1.jpg" alt="" class="fl" width="100%" height="100%">
+                            <div class="fl introduce">
+                                <p class="s-title">深圳</p>
+                                <p class="des">世界之窗、东部华侨城、大梅沙海滨公园、欢乐谷、红树林</p>
+                            </div>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class='more'><a href="javascript:void(0)">加载更多</a></div>
+        </section>
+        <!-- 历史名人  -->
+        <section class="page allCelebrity" id="allCelebrity">
+            <div class="c-title"><i></i><span>历史名人</span></div>
+            <div class="celebrity">
+                <div class="input">
+                    <i class='fl'></i>
+                    <input type="" name="" placeholder='请输入您想要了解的名人(限广东)'>
+                </div>
+                <ul class="list clearfix">
+                    <!-- <li class='last'><a href="javascript:void(0)"><span>等等</span></a></li> -->
+                </ul>
+            </div>
+            <div class="details">
+                <!-- <img src='./img/celebrity1.gif' alt="" width="100%" height='100%'>
+                <div class="des">
+                    <p></p>
+                </div>
+                <div class="close"></div> -->
+            </div>
+        </section>
+
+        <!-- 民俗文化 -->
+        <section class="page Culture" id='Culture'>
+            <div class="cultureTitle">
+                <a href="javascript:void(0);" class="title"><span>民俗文化</span><i></i></a>
+            </div>
+            <div class="poster"><a href="javascript:void(0);"><img src="./img/culture.jpg" alt="" width="100%" height="100%"></a></div>
+            <div class="c-nav">
+                <ul class='clearfix list'>
+                    <!-- <li>
+                        <a href="javascript:void(0);">
+                            <img src="./img/culture1.gif" alt="" width="100%" height="100%">
+                            <p>潮州铁枝木偶戏</p>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- 日常 -->
+        <section class="page daily" id="daily">
+            <div class="d-title">
+                <a href="javascript:void(0);" class="title"><span>日常</span><i></i></a>
+            </div>
+            <div class="d-wrap">
+                <div class="d-tab">
+                    <div class="tab-title on">美食</div>
+                    <div class="tab-title">游记</div>
+                </div>
+                <div class="page-wrap">
+                <!-- 美食 -->
+                    <div class="content page-on">
+                    </div>
+                <!--  游记 -->
+                    <div class="content">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- main end -->
+
+    <footer class="end">
+        <p>已经到底了</p>
+    </footer>
+    <script src='js/jquery-3.1.0.min.js'></script>
+    <script src='js/data.js'></script>
+    <script src='js/transform.js'></script>
+    <script src='js/Animate.js'></script>
+    <script src='js/index.js'></script>
+</body>
+</html>

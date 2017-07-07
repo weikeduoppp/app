@@ -1,0 +1,589 @@
+/*公共样式*/
+a {
+  color: #555;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after {
+  display: block;
+  overflow: hidden;
+  height: 0;
+  clear: both;
+  content: '';
+  zoom: 1;
+}
+/*辅助线*/
+.borderR {
+  border: 0.02439024rem solid #ff0000;
+}
+.singleEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.MultiLineEllipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+/*
+    多行尾巴省略
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+ */
+/*header start*/
+.header {
+  width: 100%;
+  max-width: 10rem;
+  margin: 0 auto;
+}
+.header .h-place {
+  width: 100%;
+  height: 2.19512195rem;
+}
+.header .h-header {
+  position: fixed;
+  top: -0.02439024rem;
+  left: 0;
+  width: 100%;
+  height: 2.19512195rem;
+  z-index: 99;
+}
+.h-page {
+  width: 100%;
+  height: 1.2195122rem;
+  background: #fbfbfa;
+  text-align: center;
+}
+.h-logo {
+  display: inline-block;
+  height: 100%;
+  margin: auto;
+}
+.h-location {
+  width: 100%;
+  padding-top: 0.24390244rem;
+  font-size: 0.48780488rem;
+  color: #555;
+}
+.h-location i {
+  display: block;
+  width: 0.73170732rem;
+  height: 0.73170732rem;
+  margin-top: -0.04878049rem;
+  background: url('../img/logo.png') no-repeat center center / 100% 100%;
+}
+.h-nav {
+  height: 1.02439024rem;
+  background: #39424a;
+}
+.nav {
+  display: table;
+  padding-top: 0.2195122rem;
+  font-size: 0.34146341rem;
+  /* -webkit-transform: translateX(-100/@rem);
+    transform: translateX(-100/@rem); */
+}
+.nav li {
+  display: table-cell;
+  white-space: nowrap;
+  border-right: 0.04878049rem solid #4a5259;
+}
+.nav li:last-child {
+  border-right: none;
+}
+.nav li a {
+  display: block;
+  margin: 0.04878049rem 0.73170732rem;
+}
+.nav li a span {
+  color: #cfd3da;
+}
+.nav li a span.on {
+  color: #fff;
+  padding: 0.07317073rem 0.14634146rem;
+  border-bottom: 0.04878049rem solid #00a7e1;
+}
+/*header end*/
+/*main start*/
+.main {
+  width: 100%;
+  max-width: 10rem;
+  margin: 0 auto;
+}
+.main a {
+  display: block;
+}
+/* banner start */
+.banner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 4rem;
+  z-index: 2;
+}
+.banner ul {
+  height: 100%;
+}
+.banner ul li {
+  float: left;
+  width: 10rem;
+  height: 100%;
+}
+.dot {
+  position: absolute;
+  bottom: 0.19512195rem;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  text-align: center;
+}
+.dot span {
+  display: inline-block;
+  width: 0.12195122rem;
+  height: 0.12195122rem;
+  background: transparent;
+  border: 0.02439024rem solid #fafafa;
+  border-radius: 0.14634146rem;
+}
+.dot span.on {
+  background: #fafafa;
+}
+.b-title {
+  position: absolute;
+  bottom: 0.87804878rem;
+  left: 50%;
+  width: 2.07317073rem;
+  margin-left: -1.02439024rem;
+  text-align: center;
+  color: #fff;
+}
+.b-title p {
+  width: 100%;
+  font-size: 0.73170732rem;
+}
+/* banner end*/
+/* place start*/
+.allPlace {
+  padding: 0 0.48780488rem;
+}
+.page .title {
+  position: relative;
+  height: 1.2195122rem;
+  line-height: 1.2195122rem;
+  font-size: 0.43902439rem;
+  text-align: center;
+}
+.page .title i {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 0.02439024rem;
+  border-top: 0.02439024rem solid #dddddd;
+  z-index: 1;
+}
+.page .title span {
+  position: relative;
+  padding: 0 0.36585366rem;
+  background: #fff;
+  z-index: 2;
+}
+.place {
+  display: flex;
+  flex-flow: row wrap;
+}
+.place a {
+  width: 2.80487805rem;
+  height: 4.14634146rem;
+  padding-bottom: 0.48780488rem;
+  margin-right: 0.29268293rem;
+}
+.place a:nth-of-type(3n) {
+  margin-right: 0;
+}
+.place a img {
+  width: 2.80487805rem;
+  height: 2.80487805rem;
+  border-radius: 0.24390244rem;
+}
+.place span {
+  display: block;
+  line-height: 0.48780488rem;
+  font-size: 0.34146341rem;
+  text-align: center;
+  color: #999;
+}
+.place span.placeName {
+  margin-top: 0.19512195rem;
+  line-height: 0.58536585rem;
+  font-size: 0.3902439rem;
+  color: #222;
+}
+.page .more a {
+  height: 0.73170732rem;
+  line-height: 0.73170732rem;
+  margin-bottom: 0.48780488rem;
+  border: 0.02439024rem solid #00a7e1;
+  font-size: 0.3902439rem;
+  text-align: center;
+  color: #00A7E1;
+  border-radius: 0.12195122rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.06);
+}
+/* place end*/
+/*recommend strat*/
+.recommend {
+  background: #ddd;
+}
+.recommend .r-title {
+  height: 0.97560976rem;
+  line-height: 0.97560976rem;
+  background: url('../img/life-bg.png') no-repeat center center / cover;
+  text-align: center;
+  font-size: 0.3902439rem;
+  color: #00A7E1;
+}
+.recommend .list {
+  display: flex;
+  height: 3.41463415rem;
+}
+.recommend .list li.on {
+  flex-grow: 4;
+  text-align: center;
+}
+.recommend .list li.on img {
+  width: 100%;
+}
+.recommend .list li {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  flex-grow: 1;
+  flex-basis: 0.48780488rem;
+  transition: .5s;
+  -webkit-transition: .5s;
+}
+.recommend .list li img {
+  display: block;
+  height: 100%;
+}
+.recommend .list dl {
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+  height: 0.97560976rem;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  color: #fff;
+  font-size: 0.43902439rem;
+  text-indent: 0.24390244rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*recommend end*/
+/* allScenic*/
+.allScenic .scenic {
+  width: 100%;
+}
+.allScenic .title {
+  width: 9.02439024rem;
+  margin: 0 0.48780488rem;
+}
+.scenic ul li {
+  height: 2.56097561rem;
+  padding: 0.36585366rem 0.48780488rem;
+}
+.scenic ul li a {
+  display: block;
+}
+.scenic ul li a img {
+  display: block;
+  width: 2.56097561rem;
+  height: 2.56097561rem;
+  border-radius: 0.12195122rem;
+}
+.scenic .introduce {
+  margin-left: 0.36585366rem;
+  width: 6.09756098rem;
+  height: 2.56097561rem;
+}
+.scenic .introduce p {
+  margin-top: 0.19512195rem;
+}
+.scenic .introduce .s-title {
+  font-size: 0.48780488rem;
+  color: #333;
+}
+.scenic .introduce .des {
+  color: #00A7E1;
+}
+.allScenic .more {
+  margin: 0 0.48780488rem;
+}
+/*allCelebrity strat*/
+.allCelebrity {
+  width: 100%;
+  height: 12.3902439rem;
+  background: url('../img/celebrity-bg.jpg') no-repeat center center / cover;
+}
+.allCelebrity .c-title {
+  width: 4.3902439rem;
+  height: 1.46341463rem;
+  padding: 1.46341463rem 0;
+  margin: 0 auto;
+}
+.allCelebrity .c-title i {
+  display: inline-block;
+  width: 1.2195122rem;
+  height: 1.2195122rem;
+  background: url('../img/celebrity-icon1.png') no-repeat center center / 100% 100%;
+  vertical-align: middle;
+}
+.allCelebrity .c-title span {
+  font-size: 0.73170732rem;
+  font-family: 'KaiTi';
+  color: #fff;
+  vertical-align: middle;
+}
+.celebrity {
+  margin: 0 0.48780488rem;
+}
+.celebrity .input {
+  width: 100%;
+  height: 1.02439024rem;
+  line-height: 1.02439024rem;
+  background: #fff;
+  border-radius: 0.51219512rem;
+}
+.celebrity .input i {
+  display: block;
+  width: 0.43902439rem;
+  height: 0.43902439rem;
+  margin: 0.29268293rem 0.24390244rem 0 1.46341463rem;
+  background: url('../img/search.png') center center / cover;
+}
+.celebrity .input input {
+  width: 6.82926829rem;
+  border: none;
+  outline: none;
+  color: #666;
+}
+.celebrity .list {
+  margin-top: 0.48780488rem;
+}
+.celebrity .list li {
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.12195122rem 0.24390244rem;
+  margin: 0.12195122rem;
+  background: #fff;
+  border-radius: 0.73170732rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.celebrity .list li a {
+  display: inline;
+  text-align: center;
+}
+.celebrity .list li a i {
+  display: inline-block;
+  width: 0.3902439rem;
+  height: 0.3902439rem;
+  margin-right: 0.12195122rem;
+  background: url('../img/celebrity-icon.png') center center / cover;
+  vertical-align: middle;
+}
+.celebrity .list li a span {
+  color: #999;
+  vertical-align: middle;
+}
+.allCelebrity .details {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  z-index: 100;
+}
+.allCelebrity .details img {
+  display: block;
+  width: 4.14634146rem;
+  height: 5.85365854rem;
+  margin: 0.97560976rem auto;
+}
+.allCelebrity .details .des {
+  margin: 0 0.48780488rem;
+}
+.allCelebrity .details .des p {
+  text-indent: 2em;
+  color: #fafafa;
+  margin-bottom: 0.48780488rem;
+}
+.allCelebrity .details .close {
+  position: absolute;
+  top: 0.36585366rem;
+  right: 0.48780488rem;
+  width: 0.6097561rem;
+  height: 0.6097561rem;
+  background: url('../img/close.png') center center / cover;
+}
+/*allCelebrity end*/
+/* Culture start */
+.Culture .cultureTitle {
+  height: 1.2195122rem;
+  line-height: 1.2195122rem;
+  padding: 0 0.48780488rem;
+  font-size: 0.43902439rem;
+  text-align: center;
+}
+.Culture .cultureTitle span {
+  color: #666;
+}
+.c-nav {
+  overflow: hidden;
+  width: 100%;
+  height: 3.46341463rem;
+}
+.c-nav ul {
+  height: 100%;
+}
+.c-nav ul li {
+  float: left;
+  width: 2.68292683rem;
+  margin: 0.34146341rem 0 0 0.24390244rem;
+}
+.c-nav ul li img {
+  width: 100%;
+}
+.c-nav ul li p {
+  overflow: hidden;
+  width: 100%;
+  height: 0.73170732rem;
+  line-height: 0.73170732rem;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* Culture end */
+/*daily start*/
+.daily {
+  width: 100%;
+}
+.daily .d-title {
+  height: 1.2195122rem;
+  padding: 0 0.48780488rem;
+}
+.d-wrap {
+  width: 100%;
+  padding-bottom: 0.48780488rem;
+}
+.d-tab {
+  -webkit-display: flex;
+  display: flex;
+  width: 100%;
+  height: 1.36585366rem;
+}
+.d-tab .tab-title {
+  flex-grow: 1;
+  height: 1.36585366rem;
+  line-height: 1.36585366rem;
+  font-size: 0.43902439rem;
+  text-align: center;
+  color: #555;
+  background: #fff;
+  border: 0.02439024rem solid #dddddd;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.d-tab .tab-title:first-child {
+  border-right: none;
+}
+.d-tab .on {
+  color: #00A7E1;
+}
+.page-wrap {
+  position: relative;
+  overflow: hidden;
+  background: #F1F1F1;
+}
+.page-wrap .content {
+  display: none;
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+.page-wrap .page-on {
+  display: block;
+  opacity: 1;
+}
+.page-wrap .content .box {
+  position: relative;
+  width: 100%;
+  height: 8rem;
+  margin-top: 0.34146341rem;
+  background: #fff;
+  border-radius: 0.12195122rem;
+  opacity: 0;
+  transition: .5s;
+}
+.page-wrap .page-on .box {
+  opacity: 1;
+}
+.page-wrap .content .box a {
+  display: block;
+  height: 100%;
+}
+.page-wrap .content .box img {
+  display: block;
+  height: 5.68292683rem;
+  border-radius: 0.12195122rem;
+}
+.page-wrap .content p.name {
+  height: 2.31707317rem;
+  line-height: 1.2195122rem;
+  margin: 0 0.36585366rem;
+  font-size: 0.53658537rem;
+  -webkit-line-clamp: 2;
+}
+.page-wrap .content .detail {
+  position: absolute;
+  padding: 0.36585366rem 0 0.12195122rem 0;
+  bottom: 2.31707317rem;
+  left: 0;
+  right: 0;
+  font-size: 0.43902439rem;
+  color: #fff;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+.page-wrap .content .detail p {
+  overflow: hidden;
+  width: 4.87804878rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-indent: 1em;
+}
+.page-wrap .content .detail span {
+  display: inline-block;
+  margin-right: 1em;
+}
+/*daily end*/
+/*main end*/
+/*footer start*/
+.end {
+  height: 1.46341463rem;
+  line-height: 1.46341463rem;
+  color: #777;
+  background: #f1f1f1;
+  text-align: center;
+}

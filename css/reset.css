@@ -1,0 +1,36 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+ul,ol{list-style:none;}
+strong,b{font-weight:normal;}
+em,i{font-style:normal;}
+table{border-spacing:0;border-collapse:collapse;}
+img{border:0;vertical-align:middle;}
+input::input-placeholder, textarea::input-placeholder {   color: #000; font-size: 16px; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {　　  color: #222; font-size: 16px; 　　} 　　input:-moz-placeholder, textarea:-moz-placeholder {　　  color:#222; font-size: 16px; 　　} 　　input::-moz-placeholder, textarea::-moz-placeholder {　　  color:#222; font-size: 16px; 　　} 　　input:-ms-input-placeholder, textarea:-ms-input-placeholder {　　  color:#222; font-size: 16px; 　　}
+input,select{vertical-align:middle;font-size:100%;line-height:150%;font-family: Helvetica,arial,'\5FAE\8F6F\96C5\9ED1',sans-serif;-webkit-appearance:none;;}
+a{text-decoration:none;outline:none;hide-focus:expression(this.hideFocus=true);background-color:transparent;-webkit-tap-highlight-color:transparent;}
+
+body{font:14px/1.5 PingFang-SC-Regular,Helvetica Neue , arial,"\5FAE\8F6F\96C5\9ED1",sans-serif;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;}
+
+ /*
+       文字大小/行高 文字类型
+font:14px/1.5 arial
+    14的1.5倍
+*/
+/*
+    outline:none; 轮廓
+    hide-focus:expression(this.hideFocus=true); 兼容 针对于IE的写法 效果跟上面一样
+*/
+/*
+-webkit-text-size-adjust:none;
+想让网页字体小于12px而不等于12px的需求，那么就可以禁止浏览器文字大小调整功能 none
+因为有些英文是需要小于12px的
+*/
+
+/*
+-webkit-tap-highlight-color:transparent;
+在IOS下 点击链接通过js定义的可点击元素的时候，它就会出现一个半透明的灰色背景
+如果不要，就transparent
+如果要或想设置其他颜色，-webkit-tap-highlight-color: red | green
+*/
